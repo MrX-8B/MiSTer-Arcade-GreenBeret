@@ -79,7 +79,7 @@ endmodule
 // Retrieval info: 	<generic name="gui_cascade_counter1" value="false" />
 // Retrieval info: 	<generic name="gui_output_clock_frequency1" value="24.573863" />
 // Retrieval info: 	<generic name="gui_divide_factor_c1" value="10" />
-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency1" value="24.615384 MHz" />
+// Retrieval info: 	<generic name="gui_actual_output_clock_frequency1" value="24.000000 MHz" />
 // Retrieval info: 	<generic name="gui_ps_units1" value="ps" />
 // Retrieval info: 	<generic name="gui_phase_shift1" value="0" />
 // Retrieval info: 	<generic name="gui_phase_shift_deg1" value="180.0" />
