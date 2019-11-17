@@ -40,7 +40,7 @@
 -- 06 Nov.2019 : Fixed V-Sync frequency
 ---------------------------------------------------------------------------------
 -- 18 Nov.2019 : Fixed sprite issue
---               Added ROM build scripts of "Rush'n Attack"
+--               Added ROM build scripts for "Rush'n Attack"
 ---------------------------------------------------------------------------------
 
                                 *** Attention ***
