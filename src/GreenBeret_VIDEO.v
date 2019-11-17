@@ -152,6 +152,8 @@ reg  [5:0]	sano;
 reg  [1:0]	saof;
 reg  [7:0]	sat0, sat1, sat2, sat3;
 
+reg  [2:0]	phase;
+
 wire [8:0]	px    = {1'b0,sat2} - {sat1[7],8'h0};
 wire [7:0]	py    = (phase==1) ? SATD : sat3;
 wire			fx		= sat1[4];
@@ -175,7 +177,6 @@ wire [7:0]	pix	= {color,(lx[0] ? SPCD[4:7]:SPCD[0:3])};
 
 `define SPRITES 8'h30
 
-reg [2:0] phase;
 always @( posedge VCLKx8 ) begin
 	if (SPHP==0) begin
 		xcnt  <= 0;
@@ -183,7 +184,7 @@ always @( posedge VCLKx8 ) begin
 		saof  <= 3;
 		phase <= 1;
 	end
-	case (phase)
+	else case (phase)
 		0: /* empty */ ;
 
 		1: begin
@@ -191,7 +192,7 @@ always @( posedge VCLKx8 ) begin
 				else begin
 					if (hy) begin
 						sat3  <= SATD;
-						saof  <= saof-2'd1;
+						saof  <= 2;
 						phase <= phase+3'd1;
 					end
 					else sano <= sano+6'd1;
@@ -200,19 +201,19 @@ always @( posedge VCLKx8 ) begin
 
 		2: begin
 				sat2  <= SATD;
-				saof  <= saof-2'd1;
+				saof  <= 1;
 				phase <= phase+3'd1;
 			end
 		
 		3: begin
 				sat1  <= SATD;
-				saof  <= saof-2'd1;
+				saof  <= 0;
 				phase <= phase+3'd1;
 			end
 
 		4: begin
 				sat0  <= SATD;
-				saof  <= saof-2'd1;
+				saof  <= 3;
 				sano  <= sano+6'd1;
 				xcnt  <= 5'b1_0000;
 				phase <= phase+3'd1;
