@@ -1,0 +1,24 @@
+<misterromdescription>
+	<name>Green Beret</name>
+	<mameversion>0220</mameversion>
+	<setname>gberet</setname>
+	<mratimestamp>20200427161917</mratimestamp>
+	<year>1985</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Army / Fighter</category>
+	<rbf>rshnatk</rbf>
+	<rom index="0" zip="gberet.zip" md5="886c929e6db35548e44cfdd8d168bdb1">
+		<part crc="ae29e4ff" name="577l03.10c"/>
+		<part crc="240836a5" name="577l02.8c"/>
+		<part crc="41fa3e1f" name="577l01.7c"/>
+		<part crc="41fa3e1f" name="577l01.7c"/>
+		<part crc="0f1cb0ca" name="577l06.5e"/>
+		<part crc="523a8b66" name="577l05.4e"/>
+		<part crc="883933a4" name="577l08.4f"/>
+		<part crc="ccecda4c" name="577l04.3e"/>
+		<part crc="4da7bd1b" name="577l07.3f"/>
+		<part crc="e9de1e53" name="577h10.5f"/>
+		<part crc="2a1a992b" name="577h11.6f"/>
+		<part crc="c15e7c80" name="577h09.2f"/>
+	</rom>
+</misterromdescription>
